@@ -1,0 +1,7 @@
+package ex3_autowiring;
+
+import ex1_xml1.MessageBean;
+
+public interface OutputerImpl extends MessageBean {
+
+}

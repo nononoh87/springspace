@@ -1,0 +1,64 @@
+package board.impl;
+
+import java.util.List;
+
+import board.BoardService;
+import board.vo.BoardVO;
+
+
+
+public class BoardServiceImpl implements BoardService {
+	
+	private BoardDAOMybatis boardDAO;
+
+	public void insertBoard(BoardVO vo) {
+
+		boardDAO.insertBoard(vo);
+	}
+
+	public void updateBoard(BoardVO vo) {
+		boardDAO.updateBoard(vo);
+	}
+
+	public void deleteBoard(BoardVO vo) {
+		boardDAO.deleteBoard(vo);
+	}
+
+	public BoardVO getBoard(BoardVO vo) {
+		return boardDAO.getBoard(vo);
+	}
+
+	public List<BoardVO> getBoardList(BoardVO vo) {
+		return boardDAO.getBoardList(vo);
+	}
+
+	@Override
+	public void insertBoard(board.BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateBoard(board.BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteBoard(board.BoardVO vo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public board.BoardVO getBoard(board.BoardVO vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<board.BoardVO> getBoardList(board.BoardVO vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

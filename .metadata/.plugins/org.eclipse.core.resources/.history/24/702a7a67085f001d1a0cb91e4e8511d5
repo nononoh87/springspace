@@ -1,0 +1,22 @@
+package ex1_xml2_ref;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import ex1_xml1.MessageBean;
+
+public class mainApp {
+
+	public static void main(String[] args) {
+		
+		//[1]
+		ApplicationContext context = new
+				ClassPathXmlApplicationContext(
+						"ex1_xml2/applicationContext.xml");
+		//[2]
+		MemberBean bean =context.getBean("member", MemberBean.class);
+		bean.output();
+
+	}
+
+}

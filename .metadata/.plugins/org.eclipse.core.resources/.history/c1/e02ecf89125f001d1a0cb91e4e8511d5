@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id='bean' class="ex1_xml3_list.ListBean">
+<property name="intList"><!-- 셋리스트 호출 -->
+	<list>
+		<value>22</value>
+		<value>33</value>
+		<value>44</value>
+	</list>
+</property>
+<property name="memberList"><!-- 셋멤버리스트 호출 -->
+	<list>
+		<ref bean='m1'/>
+		<ref bean='m2'/>
+		<bean class="ex1_xml3_list.MemberBean"></bean>
+		<!-- (3) 생성자 or setter 값 지정 -->
+	</list>
+</property>
+</bean>
+
+<bean id='m1' class="ex1_xml3_list.MemberBean">
+<!-- (1) 생성자 이용값 지정 -->
+	<constructor-arg ref='member'/>
+</bean>
+
+<bean id='m2' class="ex1_xml3_list.MemberBean">
+<!-- (2) setter 이용값 지정 -->
+	<property name="member" ref='member2'/>
+</bean>
+
+<bean/>
+</beans>

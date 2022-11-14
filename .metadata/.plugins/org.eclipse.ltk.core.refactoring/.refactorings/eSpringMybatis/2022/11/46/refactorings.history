@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;db.properties&apos; to &apos;bMybatisHW/src/config&apos;&#x0D;&#x0A;- Original project: &apos;eSpringMybatis&apos;&#x0D;&#x0A;- Destination element: &apos;bMybatisHW/src/config&apos;&#x0D;&#x0A;- Original element: &apos;db.properties&apos;" description="Copy file" destination="=bMybatisHW/src=/optional=/true=/=/maven.pomderived=/true=/&lt;config" element1="src/config/db.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1668041055351" units="0" version="1.0"/>
+</session>
