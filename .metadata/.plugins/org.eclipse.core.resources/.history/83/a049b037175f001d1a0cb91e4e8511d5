@@ -1,5 +1,0 @@
-package ex3_autowiring;
-
-public class MessageBeanImpl {
-
-}
